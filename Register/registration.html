@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
+    <title>Register</title>
+    <script src="validation.js"></script>
+  <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="registration.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+
+      <div class="card mx-auto">
+      <div class="display-4 text-center mt-5 mb-3"> Wallstreet'18 </div>
+      <p class="text-center"> Register a new account </p>
+     <form onsubmit="return (Func(this) & usertest() & numtest()==1)">
+    <!--<form onsubmit="return !!(Func(this) & usertest() & numtest())">-->
+      <!--<div class="form-group mt-4 mr-2 ml-2">-->
+      <!--<label for="Username">Username</label>-->
+      <div class="form-group mt-4 mr-2 ml-2">
+      <input type="text" class="form-control" id="Username" placeholder="Username" onkeyup="usertest()" required>
+      <!--  <span class="fa fa-user fa-fw mr-3"></span>-->
+      <div id="erroru"></div>
+     </div>
+     <div class="form-group mr-2 ml-2 mt-4">
+     <!--<label for="Email">Email address</label>-->
+     <input type="email" class="form-control" id="Email" placeholder="Email" required>
+    </div>
+
+<div class="form-group mr-2 ml-2 mt-4">
+<!--<label for="college">College </label>-->
+<input type="text" class="form-control" id="College" placeholder="College" required>
+</div>
+
+<div class="form-group mr-2 ml-2">
+<select class="form-control mt-4" id="branch" placeholder="">
+  <option selected> Select your branch.. </option>
+  <option> CSE </option>
+  <option> IT </option>
+  <option> ECE </option>
+    <option> Civil </option>
+      <option> Mechanical </option>
+        <option> Metallurgy </option>
+          <option> Biotech </option>
+          <option> Bio-med </option>
+        </select>
+</div>
+
+<div class="form-group mr-2 ml-2 mt-4">
+<!--<label for="password">Password</label>-->
+<input type="password" class="form-control" id="password" placeholder="Enter password"  required>
+<div id="errorp"> </div>
+</div>
+<div class="form-group mr-2 ml-2 mt-4">
+<!--<label for="password">Password(again)</label>-->
+<input type="password" class="form-control" id="passworda" placeholder="Confirm password" required>
+</div>
+<div class="form-group mr-2 ml-2 mt-4">
+<!--<label for="contact">Contact</label>-->
+<input type="tel" class="form-control" id="contact" min="10" max="10" placeholder="Contact number" onkeyup="numtest()" required>
+<div id="errorc"></div>
+</div>
+<button class="btn btn-info btn-md ml-2 mb-2 mr-10 mt-5 text-center" id="register" type="submit" onclick="return Func(this)"> REGISTER </button>
+<p class="text-center" id="signin"> Already have an account? <a href="#"> Sign in </a></p>
+<br>
+</form>
+</div>
+  </body>
+</html>
