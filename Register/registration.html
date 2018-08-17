@@ -20,27 +20,41 @@
       <div class="card mx-auto">
       <div class="display-4 text-center mt-5 mb-3"> Wallstreet'18 </div>
       <p class="text-center"> Register a new account </p>
-     <form onsubmit="return (Func(this) & usertest() & numtest()==1)">
+     <form onsubmit="return !!(Func() & usertest() & numtest());" method="post" autocomplete="off">
     <!--<form onsubmit="return !!(Func(this) & usertest() & numtest())">-->
       <!--<div class="form-group mt-4 mr-2 ml-2">-->
       <!--<label for="Username">Username</label>-->
       <div class="form-group mt-4 mr-2 ml-2">
+        <div class="input-group">
       <input type="text" class="form-control" id="Username" placeholder="Username" onkeyup="usertest()" required>
-      <!--  <span class="fa fa-user fa-fw mr-3"></span>-->
+      <span class="input-group-addon">
+        <i class="fa fa-user mr-1 mb-0"></i>
+      </span>
+    </div>
       <div id="erroru"></div>
      </div>
      <div class="form-group mr-2 ml-2 mt-4">
      <!--<label for="Email">Email address</label>-->
+     <div class="input-group">
      <input type="email" class="form-control" id="Email" placeholder="Email" required>
+     <span class="input-group-addon">
+       <i class="fa fa-envelope-o mr-1 mb-0"></i>
+     </span>
+   </div>
     </div>
 
 <div class="form-group mr-2 ml-2 mt-4">
 <!--<label for="college">College </label>-->
+<div class="input-group">
 <input type="text" class="form-control" id="College" placeholder="College" required>
+<span class="input-group-addon">
+  <i class="fa fa-university mr-1 mb-0"></i>
+</span>
+</div>
 </div>
 
 <div class="form-group mr-2 ml-2">
-<select class="form-control mt-4" id="branch" placeholder="">
+<select class="form-control mt-4 mr-2" id="branch" placeholder="">
   <option selected> Select your branch.. </option>
   <option> CSE </option>
   <option> IT </option>
@@ -55,22 +69,38 @@
 
 <div class="form-group mr-2 ml-2 mt-4">
 <!--<label for="password">Password</label>-->
-<input type="password" class="form-control" id="password" placeholder="Enter password"  required>
+<div class="input-group">
+<input type="password" class="form-control has-feedback" id="password" placeholder="Enter password"  required>
+<span class="input-group-addon">
+  <i class="fa fa-lock mr-1 mb-0"></i>
+</span>
+</div>
 <div id="errorp"> </div>
 </div>
 <div class="form-group mr-2 ml-2 mt-4">
 <!--<label for="password">Password(again)</label>-->
+<div class="input-group">
 <input type="password" class="form-control" id="passworda" placeholder="Confirm password" required>
+<span xlass="input-group-addon">
+<i class="fa fa-arrow-circle-right mr-1 mb-0"></i>
+</span>
+</div>
 </div>
 <div class="form-group mr-2 ml-2 mt-4">
 <!--<label for="contact">Contact</label>-->
+<div class="input-group">
 <input type="tel" class="form-control" id="contact" min="10" max="10" placeholder="Contact number" onkeyup="numtest()" required>
+<span class="input-group-addon">
+  <i class="fa fa-phone mr-1 mb-0"></i>
+</span>
+</div>
 <div id="errorc"></div>
 </div>
-<button class="btn btn-info btn-md ml-2 mb-2 mr-10 mt-5 text-center" id="register" type="submit" onclick="return Func(this)"> REGISTER </button>
-<p class="text-center" id="signin"> Already have an account? <a href="#"> Sign in </a></p>
+<button class="btn btn-info btn-sm text-center" id="register" type="submit"> SIGN UP </button>
+<p class="text-center mt-2" id="signin"> Already have an account? <a href="../Login/Login.html"> Sign in </a></p>
 <br>
 </form>
 </div>
   </body>
 </html>
+<!--onclick="return Func(this)-->

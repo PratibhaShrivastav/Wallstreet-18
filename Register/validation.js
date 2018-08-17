@@ -3,10 +3,13 @@
   var x= document.getElementById('password');
   var y= document.getElementById('passworda');
   if(x.value!=y.value){
-   x.style.backgroundColor="#F08080";
-   y.style.backgroundColor="#F08080";
+   //x.style.backgroundColor="#F08080";
+   //y.style.backgroundColor="#F08080";
    document.getElementById('errorp').innerHTML="Passwords didn't match!";
    return false;
+ }
+ else {
+   return true;
  }
 }
 
@@ -24,7 +27,7 @@ function usertest(){
   var usr=document.getElementById('Username');
   var usre=document.getElementById('Username').value;
   if(!regex.test(usre)){
-    usr.style.backgroundColor="#F08080";
+    //usr.style.backgroundColor="#F08080";
     document.getElementById('erroru').innerHTML="The username should not be less than 3 characters, can contain letters, numbers and underscores";
     return false;
   }
@@ -41,12 +44,13 @@ function usertest(){
 
 function numtest(){
   var len=document.getElementById('contact');
-  if(len.value.length!=10){
-    len.style.backgroundColor="#F08080";
+  var isnum = /^\d+$/.test(len.value);
+  if(len.value.length!=10 && !isnum){
+  //  len.style.backgroundColor="#F08080";
     document.getElementById('errorc').innerHTML="Enter a valid phone number";
     return false
   }
-  if(len.value.length==10){
+  if(len.value.length==10 && isnum){
     len.style.backgroundColor="white";
     document.getElementById('errorc').innerHTML="";
     return true;
