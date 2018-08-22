@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Oswald" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
-    <title>Register</title>
+    <title>Login</title>
     <script src="validation.js"></script>
   <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
@@ -21,6 +21,7 @@
       <div class="display-4 text-center mt-5 mb-3"> Wallstreet'18 </div>
       <br>
       <p class="text-center"> Sign-in to start your session </p>
+      <form method="post">
           <div class="form-group mr-2 ml-2 mt-2">
           <!--<label for="Email">Email address</label>-->
           <div class="input-group">
@@ -31,7 +32,7 @@
         </div>
          </div>
 
-         <div class="form-group mr-2 ml-2 mt-4">
+         <div class="form-group mr-2 ml-2 mt-2">
          <!--<label for="password">Password</label>-->
          <div class="input-group">
          <input type="password" class="form-control has-feedback" id="password" placeholder="Enter password"  required>
@@ -50,7 +51,9 @@
 
          <button class="btn btn-primary btn-sm text-center" id="login" type="submit"> SIGN IN </button>
           <br>
+          <br>
          <div class="text-center" id="signup"> Don't have an account? <a href="../Register/registration.html"> Sign up </a></div>
+       </form>
 <br>
 <br>
 </body>
