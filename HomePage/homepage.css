@@ -7,7 +7,7 @@ font-family: 'Lato', sans-serif;*/
  #main {
    height: 100vh;
    position: relative;
-    background-color: #C6222F;
+   background-color: #C6222F;
  }
 .nav-link {
   font-family: 'Lato', sans-serif;
@@ -42,7 +42,7 @@ a:hover {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
-  padding-left:40px;
+  padding-left:35px;
   padding-top: 120px;
 }
 #a>div {
@@ -77,6 +77,9 @@ a:hover {
   width: 6%;
   height: 450px;
   margin-left: 7%;
+}
+#number, #text {
+  display:inline;
 }
 #text {
   color: white;
@@ -130,6 +133,9 @@ a:hover {
 }
 .slides {
   display: none;
+}
+#corner {
+  font-family:  'Lato', sans-serif;
 }
 .prev, .next {
   cursor: pointer;

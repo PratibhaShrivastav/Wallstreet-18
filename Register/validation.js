@@ -45,12 +45,13 @@ function usertest(){
 function numtest(){
   var len=document.getElementById('contact');
   var isnum = /^\d+$/.test(len.value);
-  if(len.value.length!=10 && !isnum){
+  if(len.value.length!=10 || !isnum ){
   //  len.style.backgroundColor="#F08080";
     document.getElementById('errorc').innerHTML="Enter a valid phone number";
-    return false
+    return false;
   }
-  if(len.value.length==10 && isnum){
+  /*if(len.value.length==10 && isnum ){*/
+  else {
     len.style.backgroundColor="white";
     document.getElementById('errorc').innerHTML="";
     return true;
