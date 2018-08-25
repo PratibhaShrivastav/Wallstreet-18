@@ -37,6 +37,7 @@ a:hover {
   float: right;
   height: 758px;
   width: 420px;
+  background-size: 100%;
 }
 #a {
   display: flex;
@@ -180,8 +181,8 @@ a:hover {
   height: auto;
   }
  #Bman {
-  height:560px;
-  width: 280px;
+  height:620px;
+  width: 300px;
  }
  #logows {
    height: 110px;
@@ -195,7 +196,7 @@ a:hover {
    position: absolute;
     top:30%;
     letter-spacing: 0;
-    left:10px;
+    left:4%;
  }
  .nav-link {
    font-size: 20px;
@@ -225,16 +226,19 @@ a:hover {
  }
  .next {
    right: 9%;
-   top: 117%;
+   top: 122%;
    text-align: center;
  }
  .prev {
-   top: 117%;
+   top: 122%;
+ }
+ .prev,.next #heada {
+   display: inline-block;
  }
  #number {
    width: 8%;
    font-size: 20px;
-   height: 450px;
+   height: 500px;
  }
  #text {
    font-size: 16px;
@@ -245,4 +249,5 @@ a:hover {
  #clg {
    font-size: 28px;
  }
+
 }
