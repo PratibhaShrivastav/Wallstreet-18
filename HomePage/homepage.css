@@ -189,7 +189,7 @@ a:hover {
    width: 110px;
   position:absolute;
   margin-top: 3%;
-  margin-left: -3%;
+  margin-left: 0%;
  }
  #head {
    font-size: 30px;
@@ -203,6 +203,7 @@ a:hover {
  }
  #corner {
    font-size: 20px;
+   margin-bottom: 6%;
  }
  #text1, #btn {
    font-size: 25px;
@@ -226,11 +227,11 @@ a:hover {
  }
  .next {
    right: 9%;
-   top: 122%;
+   top: 130%;
    text-align: center;
  }
  .prev {
-   top: 122%;
+   top: 130%;
  }
  .prev,.next #heada {
    display: inline-block;
@@ -249,5 +250,4 @@ a:hover {
  #clg {
    font-size: 28px;
  }
-
 }
