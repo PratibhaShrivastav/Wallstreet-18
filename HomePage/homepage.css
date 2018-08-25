@@ -137,6 +137,9 @@ a:hover {
 #corner {
   font-family:  'Lato', sans-serif;
 }
+#text {
+  font-size: 30px;
+}
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -165,6 +168,81 @@ a:hover {
   animation-duration: 1.5s;
 
 }
+.custom-toggler.navbar-toggler {
+  border-color: rgb(255,102,203);
+  height: 10px;
+}
 #one {
   display: block;
+}
+@media screen and (max-width:768px){
+  body {
+  height: auto;
+  }
+ #Bman {
+  height:560px;
+  width: 280px;
+ }
+ #logows {
+   height: 110px;
+   width: 110px;
+  position:absolute;
+  margin-top: 3%;
+  margin-left: -3%;
+ }
+ #head {
+   font-size: 30px;
+   position: absolute;
+    top:30%;
+    letter-spacing: 0;
+    left:10px;
+ }
+ .nav-link {
+   font-size: 20px;
+ }
+ #corner {
+   font-size: 20px;
+ }
+ #text1, #btn {
+   font-size: 25px;
+   display:none;
+ }
+ #a> div {
+   margin-top:120%;
+   margin-left: 0;
+   margin-right: 5%;
+   margin-bottom: 0;
+   position: absolute;
+   display: none;
+ }
+ #heada {
+   font-size: 30px;
+   margin-left:20%;
+ }
+ #heading {
+   width: 82%;
+   height: 40px;
+ }
+ .next {
+   right: 9%;
+   top: 117%;
+   text-align: center;
+ }
+ .prev {
+   top: 117%;
+ }
+ #number {
+   width: 8%;
+   font-size: 20px;
+   height: 450px;
+ }
+ #text {
+   font-size: 16px;
+ }
+ .footer {
+   font-size: 20px;
+ }
+ #clg {
+   font-size: 28px;
+ }
 }
