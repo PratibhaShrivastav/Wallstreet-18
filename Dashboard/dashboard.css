@@ -1,0 +1,12 @@
+.navbar-nav {
+  margin-left: auto;
+  font-size: 24px;
+}
+.navbar-brand {
+  font-size: 34px;
+}
+#logows {
+  height: 60px;
+  width: 60px;
+  margin-right: 6%;
+}

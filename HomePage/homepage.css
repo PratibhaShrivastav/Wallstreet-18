@@ -15,7 +15,7 @@ font-family: 'Lato', sans-serif;*/
 }
 #loader {
     display: block;
-    position: relative;
+    position: absolute;
     left: 50%;
     top: 50%;
     width: 200px;
@@ -280,7 +280,7 @@ a:hover {
  }
  #corner {
    font-size: 20px;
-   margin-bottom: 6%;
+   margin-bottom: 9%;
  }
  #text1, #btn {
    font-size: 25px;
@@ -304,11 +304,11 @@ a:hover {
  }
  .next {
    right: 9%;
-   top: 130%;
+   top: 127%;
    text-align: center;
  }
  .prev {
-   top: 130%;
+   top: 127%;
  }
  .prev,.next #heada {
    display: inline-block;
