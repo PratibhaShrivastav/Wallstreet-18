@@ -9,6 +9,9 @@ html {
    overflow-x: hidden;
    height: 100%;
 }
+.card {
+  display: none;
+}
 #bg {
   background-color: black;
   height:100vh;
@@ -32,8 +35,8 @@ html {
     border-radius: 90%;
     border:3px solid transparent;
     border-top-color:  #6882A1;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
+    -webkit-animation: spin 0.7s linear infinite;
+    animation: spin 0.7s linear infinite;
 }
 #loader:before {
     content: "";
@@ -160,5 +163,9 @@ select.form-group:focus {
    #login {
      width: 90%;
      margin-left: 5%;
+   }
+   #loader {
+     height: 150px;
+     width: 150px;
    }
  }

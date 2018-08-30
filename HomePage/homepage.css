@@ -1,6 +1,8 @@
 /*font-family: 'Gothic A1', sans-serif;
 font-family: 'Lato', sans-serif;*/
-
+.complete {
+  display: none;
+}
 #bg {
   background-color: black;
   height:100vh;
@@ -24,8 +26,8 @@ font-family: 'Lato', sans-serif;*/
     border-radius: 90%;
     border:3px solid transparent;
     border-top-color:  #6882A1;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
+    -webkit-animation: spin 0.7s linear infinite;
+    animation: spin 0.7s linear infinite;
 }
 #loader:before {
     content: "";
@@ -326,5 +328,9 @@ a:hover {
  }
  #clg {
    font-size: 28px;
+ }
+ #loader {
+   height: 150px;
+   width: 150px;
  }
 }

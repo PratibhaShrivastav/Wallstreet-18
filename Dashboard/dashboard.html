@@ -12,25 +12,124 @@
     <link rel="stylesheet" href="dashboard.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="dashboard.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="charts.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     </head>
     <body>
         <nav class="navbar navbar-expand-sm navbar-light">
  <!-- Links -->
- <a class="navbar-brand" id="wallstreet" href="#"><img src="../Images/wslogo.png" alt="Logo not available!" id="logows">WallStreet</a>
+ <a class="navbar-brand" style="color:red" id="wallstreet" href="../HomePage/homepage.html"><img src="../Images/wslogo.png" alt="Logo not available!" id="logows">WallStreet</a>
  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon" style=""></span>
   </button>
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+ <div class="collapse navbar-collapse" id="collapsibleNavbar">
  <ul class="navbar-nav">
   <li class="nav-item">
-    <a class="nav-link ml-2" href="#">Logout</a>
+    <a class="nav-link ml-2" style="color:#1E1D54" href="#">Logout</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link ml-2" href="#">Register</a>
+    <a class="nav-link ml-2" style="color:#1E1D54" href="#">Leaderboard</a>
   </li>
  </ul>
  </div>
  </nav>
+ <!--Content-->
+ <div id="shade">
+   <div class="flex-container">
+   <div class="left">
+     <div class="box1">
+       <h1 class="ml-3"><B> Welcome<br> User </B></h1>
+     </div>
+     <div class="box2">
+       <h3 id="caption"> Money </h3>
+       <h3 id="data"> $ 1234567 </h3>
+   </div>
+   <div class="box3">
+      <h3 id="caption"> Stocks </h3>
+      <div class="form-group">
+       <label for="sel1" style="font-size:22px;color:#1E1D54;font-weight:bold;padding:3%;">Shares :</label>
+       <select class="form-control" id="sharename">
+       <option>Share 1</option>
+       <option>Share 2</option>
+       <option>Share 3</option>
+       <option>Share 4</option>
+       <option>Share 5</option>
+       <option>Share 6</option>
+  </select>
+</div>
+<div class="form-group">
+ <label for="sel1" style="font-size:22px;color:#1E1D54;font-weight:bold;padding-left:3%;">Quantity :</label>
+   <input type="number" class="form-control" id="sharequantity">
+</div>
+ <div class="flex-container text-center" id="buttons">
+    <div> <input type="button" class="btn btn-sm btn-danger text-center mr-2 ml-5 mb-2" id="buy" value="BUY"></div>
+    <div>  <input type="button" class="btn btn-sm btn-danger text-center ml-2 mb-2" id="sell" value="SELL"></div>
+</div>
+ </div>
+</div>
+<div class="right">
+  <table class="table table-striped table-sm">
+  <thead class="text-center">
+    <tr>
+      <th scope="col">Share Name</th>
+      <th scope="col">Current Price</th>
+      <th scope="col">Previous Price</th>
+      <th scope="col">Percentage change</th>
+      <th scope="col">Shares bought</th>
+    </tr>
+  </thead>
+  <tbody class="text-center">
+    <tr>
+      <th scope="row">Share1</th>
+      <td>238</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th scope="row">Share2</th>
+      <td>238</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>0</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Share3</th>
+      <td>238</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>0</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Share4</th>
+      <td>238</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>0</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Share5</th>
+      <td>238</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>0</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Share6</th>
+      <td>238</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>0</td>
+    </tr>
+</tbody>
+</table>
+<canvas id="c" height="400" width="800"></canvas>
+
+</div>
