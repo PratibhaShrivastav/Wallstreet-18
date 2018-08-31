@@ -84,6 +84,9 @@ body {
   margin-top: 2.5%;
   margin-left: 3%;
 }
+#head {
+  color: brown;
+}
 thead{
   background-color: #1E1D54;
   color: red;
@@ -93,6 +96,18 @@ thead{
   margin-top: 1%;
   height: 38%;
   margin-left: 3%;
-  width: 100%;
+  width: 100%;}
 
+canvas {
+  margin-top: 1%;
+  margin-left: 3%;
+  background-color: white;
+  border: 1px solid gray;
+  padding-left: 1.5%;
+  padding-top: 1.5%;
+}
+h3 {
+  color: red;
+  font-weight: bold;
+  margin-top: 2%;
 }
