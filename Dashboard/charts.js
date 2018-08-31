@@ -7,10 +7,10 @@ $(document).ready(function(){
     dataType:'json',
     success: function(data) {
       var arr = $.map(data, function(el) { return el });
-     labelsss= arr.map(function(e){
+      labelsss= arr.map(function(e){
          return e.y;
+         console.log(e.y);
       });
-      console.log(label);
         datass= arr.map(function(e){
         return e.x;
       });
