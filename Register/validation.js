@@ -57,3 +57,9 @@ function numtest(){
     return true;
   }
 }
+$(document).ready(function(){
+$('#regform').submit(function(e){
+    e.preventDefault();
+ $(':input[type="submit"]').prop('disabled', true);
+});
+});
